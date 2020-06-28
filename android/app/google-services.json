@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "882941056406",
+    "firebase_url": "https://phsc-wellness.firebaseio.com",
+    "project_id": "phsc-wellness",
+    "storage_bucket": "phsc-wellness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882941056406:android:2433b48c87476731da39b7",
+        "android_client_info": {
+          "package_name": "com.thinksolutionz.consultancyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882941056406-2vhaufr89baidi3119uhl38flf12h7qp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-C-KC55vcZsARwWrrZll5ZQ-PUclt8vY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882941056406-2vhaufr89baidi3119uhl38flf12h7qp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
