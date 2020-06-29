@@ -18,6 +18,7 @@ export default function Questions(props) {
         question,
         user: props._id,
       });
+      setAnswer(anwser);
 
       axios.post(Constants.url + '/quiz/submit_anwsers', {anwser}).then(data => {
         navigation.replace('Dashboard');
