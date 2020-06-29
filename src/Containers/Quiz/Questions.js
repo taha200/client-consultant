@@ -8,30 +8,32 @@ import axios from 'axios';
 export default function Questions(props) {
   const navigation = useNavigation();
   const [index, setIndex] = React.useState(0);
-  const [anwser, setAnwser] = React.useState([]);
+  const [anwser, setAnswer] = React.useState([]);
 
   function handleQuizChange(question, selected, option, i) {
     if (props.data.length - 1 === i) {
-      answer.push({
+      anwser.push({
         anwser: option,
         option: 'option' + (selected + 1),
         question,
         user: props._id,
       });
-      setAnwser(anwser);
 
       axios.post(Constants.url + '/quiz/submit_anwsers', {anwser}).then(data => {
         navigation.replace('Dashboard');
-      });
+      }).catch(err=>alert(err));
     } else {
       setIndex(i + 1);
       anwser.push({
-        answer: option,
+        anwser: option,
         option: 'option' + (selected + 1),
         question,
         user: props._id,
       });
-      setAnwser(anwser);
+      setAnswer(anwser);
+      axios.post(Constants.url + '/quiz/submit_anwsers', {anwser}).then(data => {
+        navigation.replace('Dashboard');
+      }).catch(err=>alert(err));
     }
   }
   return (
@@ -39,7 +41,7 @@ export default function Questions(props) {
       <View style={styles.header}>
         <View style={[styles.header_text_cont]}>
           <Text h3 style={[styles.header_text]}>
-            Better Health
+            Welcome to PHSC wellness, your mental health companion
           </Text>
         </View>
         <View

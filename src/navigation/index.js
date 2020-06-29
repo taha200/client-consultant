@@ -29,7 +29,7 @@ function CustomDrawerContent(props) {
         label={() => (
           <Image
             style={{
-              width: 230,
+              width: 260,
               height: 100,
             }}
             source={require('./../Assets/logo.png')}
