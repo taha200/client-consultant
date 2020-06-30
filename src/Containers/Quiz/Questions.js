@@ -32,9 +32,7 @@ export default function Questions(props) {
         user: props._id,
       });
       setAnswer(anwser);
-      axios.post(Constants.url + '/quiz/submit_anwsers', {anwser}).then(data => {
-        navigation.replace('Dashboard');
-      }).catch(err=>alert(err));
+   
     }
   }
   return (
@@ -42,18 +40,10 @@ export default function Questions(props) {
       <View style={styles.header}>
         <View style={[styles.header_text_cont]}>
           <Text h3 style={[styles.header_text]}>
-            Welcome to PHSC wellness, your mental health companion
+            Welcome to PSHC Wellness, your mental health companion
           </Text>
         </View>
-        <View
-          style={[
-            styles.header_text_cont,
-            {paddingLeft: 50, paddingRight: 50},
-          ]}>
-          <Text h5 style={[styles.header_text]}>
-            Help us match you to the right counselor.
-          </Text>
-        </View>
+     
       </View>
 
       {props.data.map((v, i) => {
