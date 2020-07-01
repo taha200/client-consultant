@@ -12,7 +12,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "phscwellness";
+    return "PSHCWellness";
   }
   @Override
   protected void onCreate(Bundle savedInstanceState) {
